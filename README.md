@@ -1,5 +1,5 @@
 # cmsc23
-cmsc 23 programming paradigms codes; haskell, prolog, python language
+cmsc 23 programming paradigms code list; haskell, prolog, python language
 
 Brief Description:
 
