@@ -1,0 +1,59 @@
+Lab Exercise 4 query answers=
+
+1. Which pairs are enemies?
+?- enemies(A,B).
+A = scarlet,
+B = green ;
+A = green,
+B = scarlet ;
+A = plum,
+B = white ;
+A = white,
+B = plum ;
+false.
+
+2. Which pairs are friends?
+?- friends(A,B).
+A = peacock,
+B = orchid ;
+A = orchid,
+B = peacock ;
+A = scarlet,
+B = plum ;
+A = scarlet,
+B = plum ;
+A = plum,
+B = scarlet ;
+A = plum,
+B = scarlet ;
+A = B, B = plum ;
+A = B, B = scarlet ;
+A = B, B = green ;
+A = B, B = plum ;
+A = B, B = white ;
+false.
+
+3. Which people are liked by Prof. Plum.
+?- likes(plum,B).
+B = scarlet ;
+B = scarlet ;
+B = white ;
+B = peacock ;
+B = orchid ;
+B = plum.
+
+4. Which people like themselves?
+?-  likes(A,A).
+A = plum.
+
+5. Which males are liked by females? (this query must be written as a conjunction)
+?- likes(A,B), female(A), male(B).
+A = scarlet,
+B = plum ;
+false.
+
+6. Which people are hated by the one they like? (this query must be written as a conjunction)
+?- hates(A,B), likes(B,A).
+A = white,
+B = plum ;
+false.
